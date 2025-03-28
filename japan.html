@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan - Dream Destinations</title>
+    <link href="dreamplace.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .destination-content {
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="dreamplace.html" class="nav-link">
+            <i class="fas fa-globe"></i> Back to Map
+        </a>
+    </nav>
+
+    <!-- Page Title -->
+    <h1>Japan - Land of the Rising Sun</h1>
+
+    <!-- Content Container -->
+    <div class="container">
+        <div class="destination-content">
+            <h2>Why Visit Japan?</h2>
+            <p>Japan is a fascinating blend of ancient traditions and cutting-edge modernity. From serene temples and beautiful cherry blossoms to bustling cities and technological marvels, Japan offers unique experiences that can't be found anywhere else in the world.</p>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <a href="images/japan_fuji.jpg" target="output">
+                        <img src="images/japan_fuji.jpg" alt="japan_fuji">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <rect width="300" height="250" fill="#f3d2c1"/>
+                            <path d="M150,50 L200,150 L100,150 Z" fill="#e66465" stroke="#c41e3a" stroke-width="2"/>
+                            <circle cx="150" cy="120" r="30" fill="#fff" stroke="#c41e3a" stroke-width="2"/>
+                            <text x="150" y="200" text-anchor="middle" font-family="Arial" fill="#333" font-size="14">Mount Fuji</text>
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">Mount Fuji - Japan's iconic symbol</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/japan_kinkakuji.jpg" target="output">
+                        <img src="images/japan_kinkakuji.jpg" alt="japan_kinkakuji">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <rect width="300" height="250" fill="#ffd700"/>
+                            <rect x="50" y="50" width="200" height="150" fill="#8b4513" stroke="#654321" stroke-width="2"/>
+                            <path d="M50,50 L150,20 L250,50" fill="none" stroke="#654321" stroke-width="2"/>
+                            <text x="150" y="200" text-anchor="middle" font-family="Arial" fill="#333" font-size="14">Kinkaku-ji (Golden Pavilion)</text>
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">Kinkaku-ji Temple in Kyoto</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/japan_sakura.jpg" target="output">
+                        <img src="images/japan_sakura.jpg" alt="japan_sakura">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <rect width="300" height="250" fill="#ff69b4"/>
+                            <path d="M50,100 Q150,50 250,100" fill="none" stroke="#fff" stroke-width="2"/>
+                            <path d="M50,120 Q150,70 250,120" fill="none" stroke="#fff" stroke-width="2"/>
+                            <circle cx="150" cy="125" r="20" fill="#fff"/>
+                            <text x="150" y="200" text-anchor="middle" font-family="Arial" fill="#333" font-size="14">Cherry Blossoms</text>
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">Cherry Blossom Season</div>
+                </div>
+            </div>
+
+            <h2>Must-Visit Places</h2>
+            <ul>
+                <li><strong>Tokyo</strong> - Experience the perfect blend of modern technology and traditional culture</li>
+                <li><strong>Kyoto</strong> - Visit ancient temples, traditional gardens, and experience tea ceremonies</li>
+                <li><strong>Mount Fuji</strong> - Climb Japan's highest mountain and most iconic natural landmark</li>
+                <li><strong>Osaka</strong> - Explore the food capital of Japan and enjoy the vibrant street life</li>
+                <li><strong>Hiroshima</strong> - Visit the Peace Memorial Park and learn about history</li>
+            </ul>
+
+            <h2>Unique Experiences</h2>
+            <ul>
+                <li>Stay in a traditional ryokan and experience Japanese hospitality</li>
+                <li>Participate in a traditional tea ceremony</li>
+                <li>Try authentic sushi at the Tsukiji Outer Market</li>
+                <li>Relax in an onsen (hot spring)</li>
+                <li>Watch a sumo wrestling match or practice session</li>
+            </ul>
+        </div>
+
+        <!-- Go-to-Top Button -->
+        <div class="go-top-container">
+            <a href="#top" class="go-top">Go to Top</a>
+            <a href="dreamplace.html" class="go-top">Back to Map</a>
+        </div>
+    </div>
+</body>
+</html>

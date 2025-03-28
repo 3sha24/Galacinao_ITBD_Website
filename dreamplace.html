@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Places - Trisha Nicole T. Galacinao</title>
+    <link href="dreamplace.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="biography.html" class="nav-link">
+            <i class="fas fa-user"></i> Biography
+        </a>
+        <a href="skills.html" class="nav-link">
+            <i class="fas fa-tools"></i> Skills
+        </a>
+        <a href="resume.html" class="nav-link">
+            <i class="fas fa-file-alt"></i> Resume
+        </a>
+        <a href="gallerydump.html" class="nav-link">
+            <i class="fas fa-images"></i> Gallery Dump
+        </a>
+        <a href="mybeat.html" class="nav-link">
+            <i class="fas fa-music"></i> My Beat
+        </a>
+        <a href="tvshows.html" class="nav-link">
+            <i class="fas fa-tv"></i> TV Shows
+        </a>
+        <a href="mymovies.html" class="nav-link">
+            <i class="fas fa-film"></i> Movies
+        </a>
+        <a href="dreamplace.html" class="nav-link" style="text-decoration: underline;">
+            <i class="fas fa-plane-departure"></i> Dream Places
+        </a>
+        <a href="bucketlist.html" class="nav-link">
+            <i class="fas fa-list"></i> Bucket List
+        </a>
+    </nav>
+
+    <!-- Page Title -->
+    <h1>Dream Places to Visit</h1>
+
+    <!-- Content Container -->
+    <div class="container">
+        <div class="map-container">
+            <img src="images/world-map.svg" alt="World Map" usemap="#dream-places" class="world-map">
+            <map name="dream-places">
+                <!-- Japan -->
+                <area shape="poly" coords="750,100,850,100,900,200,800,250,700,200" href="japan.html" alt="Japan">
+                <!-- France -->
+                <area alt="France" title="" href="france.html" coords="400,99,382,180,450,221,465,214" shape="poly">
+                <area alt="France" title="" href="france.html" coords="404,101,522,201,402,99,485,104,515,195,404,101,498,101,519,193,433,160,432,158,422,138" shape="poly">
+                <area alt="France" title="" href="france.html" coords="519,199,463,214,482,173" shape="poly">
+                <area alt="France" title="" href="france.html" coords="437,162,480,178,476,190,441,173,439,167" shape="poly">
+                <area shape="poly" coords="401,98,500,98,519,197,385,159," href="france.html" alt="France">
+                <!-- Italy -->
+                <area shape="poly" coords="465,130,475,140,480,155,485,170,480,185,470,200,460,215,455,200,450,185,445,170,450,155,460,140" href="italy.html" alt="Italy">
+                <!-- Australia -->
+                <area shape="rect" coords="748,349,852,402" href="australia.html" alt="Australia">
+                <!-- Canada -->
+                <area shape="poly" coords="50,50,250,50,300,150,200,200,100,180" href="canada.html" alt="Canada">
+            </map>
+        </div>
+
+        <!-- Go-to-Top Button -->
+        <div class="go-top-container">
+            <a href="#top" class="go-top">Go to Top</a>
+            <a href="index.html" class="go-top">Home</a>
+        </div>
+    <!-- Content Container and other elements -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const image = document.querySelector('.world-map');
+            const map = document.querySelector('map[name="dream-places"]');
+            const areas = map.getElementsByTagName('area');
+
+            function resizeMap() {
+                const originalWidth = 1000; // Set this to your SVG's original width
+                const originalHeight = 500; // Set this to your SVG's original height
+                const currentWidth = image.clientWidth;
+                const currentHeight = image.clientHeight;
+
+                const widthScale = currentWidth / originalWidth;
+                const heightScale = currentHeight / originalHeight;
+
+                for (let i = 0; i < areas.length; i++) {
+                    const area = areas[i];
+                    const originalCoords = area.getAttribute('data-original-coords') || area.getAttribute('coords');
+                    area.setAttribute('data-original-coords', originalCoords);
+
+                    const coords = originalCoords.split(',').map(coord => parseFloat(coord));
+                    const newCoords = coords.map((coord, index) => 
+                        index % 2 === 0 ? Math.round(coord * widthScale) : Math.round(coord * heightScale)
+                    );
+
+                    area.setAttribute('coords', newCoords.join(','));
+                }
+            }
+
+            if (image.complete) {
+                resizeMap();
+            } else {
+                image.addEventListener('load', resizeMap);
+            }
+
+            window.addEventListener('resize', resizeMap);
+
+            // Add hover effect to areas
+            areas.forEach(area => {
+                area.addEventListener('mouseenter', function() {
+                    this.style.cursor = 'pointer';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

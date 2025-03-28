@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italy - Dream Destinations</title>
+    <link href="dreamplace.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .destination-content {
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="dreamplace.html" class="nav-link">
+            <i class="fas fa-globe"></i> Back to Map
+        </a>
+    </nav>
+
+    <!-- Page Title -->
+    <h1>Italy - The Land of Art and Culture</h1>
+
+    <!-- Content Container -->
+    <div class="container">
+        <div class="destination-content">
+            <h2>Why Visit Italy?</h2>
+            <p>Italy is a country where history, art, and culture blend seamlessly with modern life. From ancient ruins and Renaissance masterpieces to world-renowned cuisine and fashion, Italy offers an unforgettable journey through time while indulging in la dolce vita.</p>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <a href="images/italy_colosseum.jpeg" target="output">
+                        <img src="images/italy_colosseum.jpeg" alt="italy_colosseum">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <rect width="300" height="250" fill="#f5f5f5"/>
+                            <path d="M150,50 C100,150 200,150 150,50" fill="#d4af37" stroke="#b8860b" stroke-width="2"/>
+                            <rect x="140" y="150" width="20" height="50" fill="#8b4513"/>
+                            <text x="150" y="230" text-anchor="middle" font-family="Arial" fill="#333" font-size="14">Colosseum</text>
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">The majestic Colosseum in Rome</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/italy_venice.jpg" target="output">
+                        <img src="images/italy_venice.jpg" alt="italy_venice">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <rect width="300" height="250" fill="#e6f3ff"/>
+                            <path d="M100,200 L150,50 L200,200" fill="#87ceeb" stroke="#4682b4" stroke-width="2"/>
+                            <rect x="120" y="150" width="60" height="50" fill="#deb887"/>
+                            <text x="150" y="230" text-anchor="middle" font-family="Arial" fill="#333" font-size="14">Venice Canals</text>
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">The romantic canals of Venice</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/italy_cuisine.jpg" target="output">
+                        <img src="images/italy_cuisine.jpg" alt="italy_cuisine">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <rect width="300" height="250" fill="#fff8dc"/>
+                            <circle cx="150" cy="125" r="50" fill="#ffd700"/>
+                            <path d="M120,100 Q150,80 180,100" fill="none" stroke="#8b4513" stroke-width="2"/>
+                            <text x="150" y="230" text-anchor="middle" font-family="Arial" fill="#333" font-size="14">Italian Cuisine</text>
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">World-famous Italian cuisine</div>
+                </div>
+            </div>
+
+            <h2>Must-Visit Places</h2>
+            <ul>
+                <li><strong>Rome</strong> - Explore the Colosseum, Vatican City, and throw a coin in the Trevi Fountain</li>
+                <li><strong>Florence</strong> - Admire Renaissance art at the Uffizi Gallery and climb the Duomo</li>
+                <li><strong>Venice</strong> - Take a gondola ride through the romantic canals and visit St. Mark's Basilica</li>
+                <li><strong>Tuscany</strong> - Experience the rolling hills, vineyards, and medieval towns</li>
+                <li><strong>Amalfi Coast</strong> - Drive along the stunning coastline and visit colorful coastal towns</li>
+            </ul>
+
+            <h2>Unique Experiences</h2>
+            <ul>
+                <li>Learn to make authentic pasta and pizza in a cooking class</li>
+                <li>Go wine tasting in Tuscany's vineyards</li>
+                <li>Visit the ancient ruins of Pompeii</li>
+                <li>Shop for high fashion in Milan</li>
+                <li>Explore the colorful villages of Cinque Terre</li>
+            </ul>
+        </div>
+
+        <!-- Go-to-Top Button -->
+        <div class="go-top-container">
+            <a href="#top" class="go-top">Go to Top</a>
+            <a href="dreamplace.html" class="go-top">Back to Map</a>
+        </div>
+    </div>
+</body>
+</html>

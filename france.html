@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France - Dream Destinations</title>
+    <link href="dreamplace.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .destination-content {
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="dreamplace.html" class="nav-link">
+            <i class="fas fa-globe"></i> Back to Map
+        </a>
+    </nav>
+
+    <!-- Page Title -->
+    <h1>France - The City of Light</h1>
+
+    <!-- Content Container -->
+    <div class="container">
+        <div class="destination-content">
+            <h2>Why Visit France?</h2>
+            <p>France is a country that embodies art, culture, and romance. From the iconic landmarks of Paris to the sun-drenched vineyards of Provence, France offers an unparalleled blend of history, gastronomy, and joie de vivre that captivates visitors from around the world.</p>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <a href="images/france_eiffel.jpeg" target="output">
+                        <img src="images/france_eiffel.jpeg" alt="france_eiffel">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <rect width="300" height="250" fill="#f5f5f5"/>
+                            <path d="M150,30 L180,200 L120,200 Z" fill="#555" stroke="#333" stroke-width="2"/>
+                            <path d="M110,120 L190,120 M130,80 L170,80" fill="none" stroke="#333" stroke-width="2"/>
+                            <text x="150" y="230" text-anchor="middle" font-family="Arial" fill="#333" font-size="14">Eiffel Tower</text>
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">The iconic Eiffel Tower in Paris</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/french_cuisine.jpg" target="output">
+                        <img src="images/french_cuisine.jpg" alt="french_cuisine">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <rect width="300" height="250" fill="#f8e8d8"/>
+                            <path d="M50,100 Q150,50 250,100 Q150,150 50,100" fill="#8b4513" stroke="#654321" stroke-width="2"/>
+                            <circle cx="150" cy="100" r="30" fill="#d2691e"/>
+                            <text x="150" y="200" text-anchor="middle" font-family="Arial" fill="#333" font-size="14">French Cuisine</text>
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">World-renowned French cuisine</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/france_loire.jpg" target="output">
+                        <img src="images/france_loire.jpg" alt="france_loire">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <rect width="300" height="250" fill="#e6f3ff"/>
+                            <path d="M50,150 Q150,50 250,150" fill="none" stroke="#4caf50" stroke-width="2"/>
+                            <circle cx="150" cy="125" r="40" fill="#8bc34a"/>
+                            <text x="150" y="200" text-anchor="middle" font-family="Arial" fill="#333" font-size="14">Loire Valley</text>
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">The beautiful Loire Valley châteaux</div>
+                </div>
+            </div>
+
+            <h2>Must-Visit Places</h2>
+            <ul>
+                <li><strong>Paris</strong> - Experience the romance of the City of Light, visit the Louvre, and climb the Eiffel Tower</li>
+                <li><strong>Versailles</strong> - Marvel at the opulent Palace of Versailles and its magnificent gardens</li>
+                <li><strong>Loire Valley</strong> - Explore fairy-tale castles and taste exquisite wines</li>
+                <li><strong>French Riviera</strong> - Enjoy the Mediterranean lifestyle in Nice, Cannes, and Saint-Tropez</li>
+                <li><strong>Mont Saint-Michel</strong> - Visit this magical island abbey in Normandy</li>
+            </ul>
+
+            <h2>Unique Experiences</h2>
+            <ul>
+                <li>Take a cooking class and learn to make authentic French cuisine</li>
+                <li>Go wine tasting in Bordeaux or Champagne regions</li>
+                <li>Visit the lavender fields of Provence</li>
+                <li>Experience Paris's café culture and sidewalk bistros</li>
+                <li>Explore the charming villages of the French countryside</li>
+            </ul>
+        </div>
+
+        <!-- Go-to-Top Button -->
+        <div class="go-top-container">
+            <a href="#top" class="go-top">Go to Top</a>
+            <a href="dreamplace.html" class="go-top">Back to Map</a>
+        </div>
+    </div>
+</body>
+</html>

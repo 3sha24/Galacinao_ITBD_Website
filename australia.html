@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia - Dream Destinations</title>
+    <link href="dreamplace.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .destination-content {
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="dreamplace.html" class="nav-link">
+            <i class="fas fa-globe"></i> Back to Map
+        </a>
+    </nav>
+
+    <!-- Page Title -->
+    <h1>Australia - Land Down Under</h1>
+
+    <!-- Content Container -->
+    <div class="container">
+        <div class="destination-content">
+            <h2>Why Visit Australia?</h2>
+            <p>Australia is a unique continent that offers an incredible blend of natural wonders, vibrant cities, and diverse wildlife. From the iconic Great Barrier Reef to the vast Outback, Australia provides unforgettable experiences and adventures that can't be found anywhere else in the world.</p>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <a href="images/australia_opera.jpg" target="output">
+                        <img src="images/australia_opera.jpg" alt="australia_opera">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <!-- Sydney Opera House SVG content -->
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">The Sydney Opera House</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/australia_reef.jpg" target="output">
+                        <img src="images/australia_reef.jpg" alt="australia_reef">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <!-- Great Barrier Reef SVG content -->
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">The Great Barrier Reef</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/australia_outback.jpg" target="output">
+                        <img src="images/australia_outback.jpg" alt="australia_outback">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <!-- Outback SVG content -->
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">The Australian Outback</div>
+                </div>
+            </div>
+
+            <h2>Must-Visit Places</h2>
+            <ul>
+                <li><strong>Sydney</strong> - Visit the Opera House, climb the Harbour Bridge, and enjoy Bondi Beach</li>
+                <li><strong>Great Barrier Reef</strong> - Dive or snorkel in the world's largest coral reef system</li>
+                <li><strong>Uluru-Kata Tjuta National Park</strong> - Experience the spiritual heart of Australia</li>
+                <li><strong>Melbourne</strong> - Explore the cultural capital's laneways, cafes, and art scene</li>
+                <li><strong>Great Ocean Road</strong> - Drive along one of the world's most scenic coastal routes</li>
+            </ul>
+
+            <h2>Unique Experiences</h2>
+            <ul>
+                <li>Watch kangaroos and koalas in their natural habitat</li>
+                <li>Experience Aboriginal culture and ancient rock art</li>
+                <li>Surf at world-famous beaches</li>
+                <li>Explore the rugged Outback</li>
+                <li>Visit wineries in the Barossa Valley</li>
+            </ul>
+        </div>
+
+        <!-- Go-to-Top Button -->
+        <div class="go-top-container">
+            <a href="#top" class="go-top">Go to Top</a>
+            <a href="dreamplace.html" class="go-top">Back to Map</a>
+        </div>
+    </div>
+</body>
+</html>

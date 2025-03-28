@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada - Dream Destinations</title>
+    <link href="dreamplace.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .destination-content {
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="dreamplace.html" class="nav-link">
+            <i class="fas fa-globe"></i> Back to Map
+        </a>
+    </nav>
+
+    <!-- Page Title -->
+    <h1>Canada - The Great White North</h1>
+
+    <!-- Content Container -->
+    <div class="container">
+        <div class="destination-content">
+            <h2>Why Visit Canada?</h2>
+            <p>Canada is a vast country of stunning natural beauty, diverse cultures, and welcoming people. From the Rocky Mountains to the Northern Lights, from vibrant cities to pristine wilderness, Canada offers endless opportunities for adventure and discovery.</p>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <a href="images/canada_niagara.jpg" target="output">
+                        <img src="images/canada_niagara.jpg" alt="canada_niagara">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <!-- Niagara Falls SVG content -->
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">The majestic Niagara Falls</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/canada_rockies.jpg" target="output">
+                        <img src="images/canada_rockies.jpg" alt="canada_rockies">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <!-- Rocky Mountains SVG content -->
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">The Canadian Rocky Mountains</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/canada_northern.jpg" target="output">
+                        <img src="images/canada_northern.jpg" alt="canada_northern">
+                        <svg width="300" height="250" viewBox="0 0 300 250">
+                            <!-- Northern Lights SVG content -->
+                        </svg>
+                    </a>
+                    <div class="gallery-caption">Northern Lights in Canada</div>
+                </div>
+            </div>
+
+            <h2>Must-Visit Places</h2>
+            <ul>
+                <li><strong>Banff National Park</strong> - Experience the stunning Canadian Rockies and pristine lakes</li>
+                <li><strong>Niagara Falls</strong> - Witness the power of one of the world's most famous waterfalls</li>
+                <li><strong>Vancouver</strong> - Explore a city where mountains meet the ocean</li>
+                <li><strong>Quebec City</strong> - Immerse yourself in French-Canadian culture and history</li>
+                <li><strong>Churchill, Manitoba</strong> - Watch polar bears and the Northern Lights</li>
+            </ul>
+
+            <h2>Unique Experiences</h2>
+            <ul>
+                <li>Go ice skating on the Rideau Canal in Ottawa</li>
+                <li>Try maple syrup tasting in a sugar shack</li>
+                <li>Watch the Calgary Stampede</li>
+                <li>Go whale watching in the Maritime provinces</li>
+                <li>Experience the vibrant culture of Toronto's diverse neighborhoods</li>
+            </ul>
+        </div>
+
+        <!-- Go-to-Top Button -->
+        <div class="go-top-container">
+            <a href="#top" class="go-top">Go to Top</a>
+            <a href="dreamplace.html" class="go-top">Back to Map</a>
+        </div>
+    </div>
+</body>
+</html>
